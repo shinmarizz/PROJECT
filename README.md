@@ -1,5 +1,3 @@
-Tentu, ini adalah versi README.md yang telah dirapikan, terstruktur, dan ditambahkan dengan simbol visual (emoji) agar terlihat lebih profesional dan menarik di GitHub Anda:
-
 ---
 
 # 🌍 Land Cover Classification in Serang District
