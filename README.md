@@ -1,45 +1,63 @@
-Land Cover Classification in Serang District using GEE
-Repositori ini berisi skrip JavaScript untuk melakukan klasifikasi tutupan lahan di wilayah Kabupaten Serang menggunakan platform Google Earth Engine (GEE). Proyek ini memanfaatkan citra satelit Landsat 8 Level 2 (Surface Reflectance) untuk memetakan distribusi tutupan lahan di wilayah tersebut.
+Tentu, ini adalah versi README.md yang telah dirapikan, terstruktur, dan ditambahkan dengan simbol visual (emoji) agar terlihat lebih profesional dan menarik di GitHub Anda:
 
-Deskripsi Proyek
-Klasifikasi tutupan lahan dilakukan menggunakan algoritma supervised classification CART (Classification and Regression Trees). Data latih (training data) dikumpulkan berdasarkan fitur tutupan lahan lokal yang mencakup:
+---
 
-Forest (Hutan)
+# 🌍 Land Cover Classification in Serang District
 
-Ricefield (Sawah)
+Repositori ini berisi skrip JavaScript untuk melakukan klasifikasi tutupan lahan di wilayah **Kabupaten Serang** menggunakan platform **[Google Earth Engine (GEE)](https://earthengine.google.com/)**.
 
-Residential Area (Permukiman)
+---
 
-Water Bodies (Perairan)
+## 📝 Deskripsi Proyek
 
-Dataset yang Digunakan
-Satellites: Landsat 8 Collection 2 Level 2 (Surface Reflectance).
+Proyek ini bertujuan untuk memetakan distribusi tutupan lahan menggunakan citra satelit **Landsat 8 Level 2 (Surface Reflectance)**. Algoritma *Supervised Classification* **CART (Classification and Regression Trees)** digunakan untuk memproses data latih dan menghasilkan peta tutupan lahan.
 
-Periode: Januari 2020 – Desember 2020.
+### 🏷️ Kategori Tutupan Lahan
 
-Preprocessing: Pemotongan citra (clip) berdasarkan ROI (Region of Interest) Kabupaten Serang dan pemilihan first image dengan tutupan awan terendah (sort by cloud cover).
+Data latih dikategorikan menjadi empat kelas utama:
 
-Cara Menjalankan
-Buka Google Earth Engine Code Editor.
+* 🌲 **Forest** (Hutan)
+* 🌾 **Ricefield** (Sawah)
+* 🏠 **Residential Area** (Permukiman)
+* 💧 **Water Bodies** (Perairan)
 
-Salin dan tempelkan kode dari file main.js di repositori ini ke dalam Code Editor.
+---
 
-Pastikan Anda telah mendefinisikan geometri ROI (Region of Interest) dan titik-titik sampel (Forest, ricefield, dll) dengan properti Class yang sesuai di Geometry Imports.
+## 📊 Dataset & Spesifikasi
 
-Klik Run untuk mengeksekusi skrip.
+* 🛰️ **Satellites**: Landsat 8 Collection 2 Level 2 (Surface Reflectance).
+* 📅 **Periode**: Januari 2020 – Desember 2020.
+* ⚙️ **Preprocessing**:
+* Pemotongan citra (*clip*) berdasarkan ROI Kabupaten Serang.
+* Seleksi citra dengan tutupan awan terendah (*sort by cloud cover*).
 
-Hasil klasifikasi akan otomatis muncul di panel peta (Map View), dan hasil akurasi (Confusion Matrix, Overall Accuracy, Kappa) dapat dilihat pada tab Console.
 
-Evaluasi Akurasi
-Model ini dievaluasi menggunakan split validation dengan pembagian data 80% untuk pelatihan (trainSet) dan 20% untuk pengujian (testSet). Metrik akurasi yang dihasilkan meliputi:
 
-Confusion Matrix: Menampilkan distribusi kelas prediksi vs kelas aktual.
+---
 
-Overall Accuracy: Persentase ketepatan model secara keseluruhan.
+## 🚀 Cara Menjalankan
 
-Kappa Coefficient: Metrik konsistensi model.
+1. Buka **[Google Earth Engine Code Editor](https://code.earthengine.google.com/)**.
+2. Salin dan tempelkan kode dari file `main.js` ke dalam *Code Editor*.
+3. Pastikan Anda telah mendefinisikan geometri **ROI** dan titik-titik sampel dengan properti `Class` yang sesuai pada *Geometry Imports*.
+4. Klik tombol **Run** untuk mengeksekusi skrip.
+5. Hasil klasifikasi akan muncul di panel peta, dan metrik akurasi dapat dilihat pada tab **Console**.
 
-Struktur Repositori
-/main.js: Skrip utama untuk klasifikasi dan visualisasi.
+---
 
-/README.md: Dokumentasi proyek.
+## 🎯 Evaluasi Akurasi
+
+Model dievaluasi menggunakan *split validation* (80% pelatihan, 20% pengujian). Metrik yang dihasilkan meliputi:
+
+* ✅ **Confusion Matrix**: Distribusi prediksi vs aktual.
+* 📈 **Overall Accuracy**: Persentase ketepatan model secara keseluruhan.
+* ✨ **Kappa Coefficient**: Metrik konsistensi model.
+
+---
+
+## 📂 Struktur Repositori
+
+* `main.js` : Skrip utama untuk klasifikasi, visualisasi, dan uji akurasi.
+* `README.md` : Dokumentasi proyek.
+
+---
