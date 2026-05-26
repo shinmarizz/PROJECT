@@ -60,4 +60,10 @@ Model dievaluasi menggunakan *split validation* (80% pelatihan, 20% pengujian). 
 * `main.js` : Skrip utama untuk klasifikasi, visualisasi, dan uji akurasi.
 * `README.md` : Dokumentasi proyek.
 
+* ## 📂 Visualiasi GEE
+
+* Berikut Visualisasi dari Hasil Pengolahan Citra Dengan GEE
+  <img width="1919" height="925" alt="image" src="https://github.com/user-attachments/assets/b5a7e82f-cd38-4116-a850-eb0d7b7c2cdb" />
+
+
 ---
